@@ -12,9 +12,9 @@ df_IMDB_new = pd.concat([df_IMDB_1,df_IMDB_2],ignore_index = True)
 df_IMDB_positive=df_IMDB_new[df_IMDB_new['sentiment']==1]
 df_IMDB_negative=df_IMDB_new[df_IMDB_new['sentiment']==0]
 
-fig1 = px.histogram(df_IMDB_positive, x='subjectivity', title="Subjectivity of positive reviews",nbins=10)
+fig1 = px.histogram(df_IMDB_new, x='subjectivity', color= "sentiment", title="Subjectivity of positive and negative reviews")
 fig1.update_layout(template='plotly_white')
-fig2 = px.histogram(df_IMDB_negative, x='subjectivity', title="Subjectivity of negative reviews",nbins=10)
+fig2 = px.histogram(df_IMDB_new, x='polarity', color= "sentiment", title="Polarity of positive and negative reviews")
 fig2.update_layout(template='plotly_white')
 fig3 = px.scatter(df_IMDB_new, y='subjectivity', x='polarity', title="Subjectivity vs Polarity")
 fig3.update_layout(template='plotly_white')
