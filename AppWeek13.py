@@ -16,8 +16,9 @@ fig1 = px.histogram(df_IMDB_new, x='subjectivity', color= "sentiment", title="Su
 fig1.update_layout(template='plotly_white')
 fig2 = px.histogram(df_IMDB_new, x='polarity', color= "sentiment", title="Polarity of positive and negative reviews")
 fig2.update_layout(template='plotly_white')
-fig3 = px.scatter(df_IMDB_new, y='subjectivity', x='polarity', title="Subjectivity vs Polarity")
-fig3.update_layout(template='plotly_white')
-st.plotly_chart(fig3)
+
+st.title('Quantitative Question')
+st.caption('red:[This is a string that explains something above.]')
+
 st.plotly_chart(fig1)
 st.plotly_chart(fig2)
