@@ -18,7 +18,7 @@ fig2 = px.histogram(df_IMDB_new, x='polarity', color= "sentiment", title="Polari
 fig2.update_layout(template='plotly_white')
 
 st.title('Quantitative Question')
-st.subtitle(':red[This is a string that explains something above.]')
+st.subheader(':red[This is a string that explains something above.]')
 
 st.plotly_chart(fig1)
 st.plotly_chart(fig2)
