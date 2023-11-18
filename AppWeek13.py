@@ -7,7 +7,7 @@ import numpy as np
 
 df_IMDB_1=pd.read_csv('IMDB_Dataset_50KPolarity_pt1.csv')
 df_IMDB_2=pd.read_csv('IMDB_Dataset_50KPolarity_pt2.csv')
-df_IMDB_new = pd.concat(df_IMDB_1,df_IMDB_2)
+df_IMDB_new = pd.concat([df_IMDB_1,df_IMDB_2]ignore_index = True)
 
 df_IMDB_positive=df_IMDB_new[df_IMDB_new['sentiment']==1]
 df_IMDB_negative=df_IMDB_new[df_IMDB_new['sentiment']==0]
