@@ -5,8 +5,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-df_IMDB_1=pd.read_csv('/IMDB_Dataset_50KPolarity_pt1.csv')
-df_IMDB_2=pd.read_csv('/IMDB_Dataset_50KPolaritpt2y.csv')
+df_IMDB_1=pd.read_csv('IMDB_Dataset_50KPolarity_pt1.csv')
+df_IMDB_2=pd.read_csv('IMDB_Dataset_50KPolaritpt2y.csv')
 
 df_IMDB_positive=df_IMDB_new[df_IMDB_new['sentiment']==1]
 df_IMDB_negative=df_IMDB_new[df_IMDB_new['sentiment']==0]
