@@ -18,6 +18,8 @@ st.title(':blue[Quantitative Question]')
 st.subheader(':red[How does the distribution of sentiment polarity scores vary between positive and negative movie reviews?]')
 st.plotly_chart(fig2)
 
+st.subheader(':rainbow[From the above graph we can see that there is a difference in the number of reviews based on the polarity]')
+
 st.subheader(':red[How does the distribution of subjectivity differ between positive and negative movie reviews?]')
 st.plotly_chart(fig1)
 
